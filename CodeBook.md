@@ -8,19 +8,19 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 
 The following are loaded from the downloaded UCI HAR data
-features - List of all feature names, used for header for x datasets. 561 rows, 2 columns
-x_train - Training set 7352 rows 561 columns
-x_test - Test dataset - 2947 rows 561 columns
-y_train - Training labels 1 to 6
-y_test - Test labels 1 to 6
-subject_train - identifies the subject 1 to 30. 7352 rows 
-subject_test - identifies the subject 1 to 30. 2947 row
-activity_labels - activity labels 6 rows, 2 columns (used to decode y_train and x_train)
-test_merge - combines the Activity ID for test, Subject ID for test and X_test dataset
-train_merge - combines the Activity ID for training, Subject ID for training and X_train dataset
-merged_dataset - unions the test_merge and train_merge together
-meanstd_dataset - queries on merged_dataset activity_id, subject_id and any column containing 'mean' or 'std' (activity type also added in following step)
-tidy_dataset - cleaned up columns names, only contains activity_id, subject_id, activity_id and average of each variable
+	- features - List of all feature names, used for header for x datasets. 561 rows, 2 columns
+	- x_train - Training set 7352 rows 561 columns
+	- x_test - Test dataset - 2947 rows 561 columns
+	- y_train - Training labels 1 to 6
+	- y_test - Test labels 1 to 6
+	- subject_train - identifies the subject 1 to 30. 7352 rows 
+	- subject_test - identifies the subject 1 to 30. 2947 row
+	- activity_labels - activity labels 6 rows, 2 columns (used to decode y_train and x_train)
+	- test_merge - combines the Activity ID for test, Subject ID for test and X_test dataset
+	- train_merge - combines the Activity ID for training, Subject ID for training and X_train dataset
+	- merged_dataset - unions the test_merge and train_merge together
+	- meanstd_dataset - queries on merged_dataset activity_id, subject_id and any column containing 'mean' or 'std' (activity type also added in following step)
+	- tidy_dataset - cleaned up columns names, only contains activity_id, subject_id, activity_id and average of each variable
 
 ## Steps
 
