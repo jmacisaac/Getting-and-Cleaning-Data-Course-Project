@@ -24,7 +24,7 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 	- tidy_dataset - cleaned up columns names, only contains activity_id, subject_id, activity_id and average of each variable
 	
 	
-## Tidy_dataset variables
+## Tidy_dataset variables.
 
 "subject_id"
  "activity_id"
