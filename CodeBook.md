@@ -1,6 +1,6 @@
-Getting and Cleaning Data Project
+# Getting and Cleaning Data Project
 
-Background information
+# Background information
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. 
 
@@ -22,21 +22,21 @@ merged_dataset - unions the test_merge and train_merge together
 meanstd_dataset - queries on merged_dataset activity_id, subject_id and any column containing 'mean' or 'std' (activity type also added in following step)
 tidy_dataset - cleaned up columns names, only contains activity_id, subject_id, activity_id and average of each variable
 
-Steps
+# Steps
 
 set working directory (zipped folders copied to the directory)
 
-1) Merges the training and the test sets to create one data set.
+ 1) Merges the training and the test sets to create one data set.
 	- Read train, test, activity and feature tables
 	- Add Column names/headings
 	- combine test data and traing data for complete dataset
 
-# 2) Extracts only the measurements on the mean and standard deviation for each measurement. 
+ 2) Extracts only the measurements on the mean and standard deviation for each measurement. 
 
-# 3) Uses descriptive activity names to name the activities in the data set 
+ 3) Uses descriptive activity names to name the activities in the data set 
 
-# 4) Appropriately labels the data set with descriptive variable names. 
+ 4) Appropriately labels the data set with descriptive variable names. 
 
-# 5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+ 5) From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 	- use library(plyr)
 	- create a text file tidy_dataset.txt for upload
